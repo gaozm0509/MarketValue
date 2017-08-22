@@ -29,7 +29,9 @@
 
 #pragma mark - 需要覆写的空方法
 
-- (void)setupDatas {};
-- (void)setupSubViews {};
+- (void)setupDatas {
+    self.view.backgroundColor = BackgroundColor;
+}
+- (void)setupSubViews {}
 
 @end

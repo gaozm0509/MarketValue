@@ -64,8 +64,8 @@ static CGFloat const kCellHeight = 50;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     cell.textLabel.text = self.dataList[indexPath.row];
-    cell.textLabel.font = kFont14;
-    cell.textLabel.textColor = kText_Color;
+    cell.textLabel.font = Font14;
+    cell.textLabel.textColor = Text_Color;
     return cell;
 }
 
@@ -95,7 +95,7 @@ static CGFloat const kCellHeight = 50;
 
 - (void)layoutUI {
     CGFloat height = MIN(200, self.dataList.count * kCellHeight);
-    self.tableView.frame = CGRectMake(0, 0, kScreen_Width, height);
+    self.tableView.frame = CGRectMake(0, 0, Screen_Width, height);
     [self.tableView reloadData];
 }
 
@@ -106,10 +106,10 @@ static CGFloat const kCellHeight = 50;
     self.isShow = YES;
     
     // 添加背景遮罩层
-    self.bgView.frame = CGRectMake(0, startPosition, kScreen_Width, view.height - startPosition);
+    self.bgView.frame = CGRectMake(0, startPosition, Screen_Width, view.height - startPosition);
     [view addSubview:self.bgView];
     
-    self.frame = CGRectMake(0, startPosition, kScreen_Width, 0);
+    self.frame = CGRectMake(0, startPosition, Screen_Width, 0);
     CGFloat height = MIN(200, self.dataList.count * kCellHeight);
     [view addSubview:self];
     

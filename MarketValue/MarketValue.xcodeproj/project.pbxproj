@@ -31,6 +31,10 @@
 		80D89B261F42E9E900304E60 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D89B251F42E9E900304E60 /* HomeViewController.m */; };
 		80D89B291F42EA1500304E60 /* InformationIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D89B281F42EA1500304E60 /* InformationIndexViewController.m */; };
 		80D89B2C1F42EA2100304E60 /* MineIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D89B2B1F42EA2100304E60 /* MineIndexViewController.m */; };
+		80D89B2F1F4C678600304E60 /* MVBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D89B2E1F4C678600304E60 /* MVBaseTableView.m */; };
+		80D89B321F4C67C600304E60 /* MineIndexTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D89B311F4C67C600304E60 /* MineIndexTableView.m */; };
+		80D89B361F4C680200304E60 /* MineIndexTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D89B341F4C680200304E60 /* MineIndexTableViewCell.m */; };
+		80D89B371F4C680200304E60 /* MineIndexTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80D89B351F4C680200304E60 /* MineIndexTableViewCell.xib */; };
 		AC330C2D79357D8B22AAB718 /* libPods-MarketValue.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B58853D393E106443FA48018 /* libPods-MarketValue.a */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +98,13 @@
 		80D89B281F42EA1500304E60 /* InformationIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationIndexViewController.m; sourceTree = "<group>"; };
 		80D89B2A1F42EA2100304E60 /* MineIndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineIndexViewController.h; sourceTree = "<group>"; };
 		80D89B2B1F42EA2100304E60 /* MineIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineIndexViewController.m; sourceTree = "<group>"; };
+		80D89B2D1F4C678600304E60 /* MVBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVBaseTableView.h; sourceTree = "<group>"; };
+		80D89B2E1F4C678600304E60 /* MVBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVBaseTableView.m; sourceTree = "<group>"; };
+		80D89B301F4C67C600304E60 /* MineIndexTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineIndexTableView.h; sourceTree = "<group>"; };
+		80D89B311F4C67C600304E60 /* MineIndexTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineIndexTableView.m; sourceTree = "<group>"; };
+		80D89B331F4C680200304E60 /* MineIndexTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineIndexTableViewCell.h; sourceTree = "<group>"; };
+		80D89B341F4C680200304E60 /* MineIndexTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineIndexTableViewCell.m; sourceTree = "<group>"; };
+		80D89B351F4C680200304E60 /* MineIndexTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineIndexTableViewCell.xib; sourceTree = "<group>"; };
 		B58853D393E106443FA48018 /* libPods-MarketValue.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MarketValue.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E665923C27E721CCB4A3196E /* Pods-MarketValue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketValue.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarketValue/Pods-MarketValue.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -198,6 +209,8 @@
 				80892EED1F42DA90008B6BE7 /* MVBaseViewController.m */,
 				80D89B0E1F42E84200304E60 /* MVTabBarViewController.h */,
 				80D89B0F1F42E84200304E60 /* MVTabBarViewController.m */,
+				80D89B2D1F4C678600304E60 /* MVBaseTableView.h */,
+				80D89B2E1F4C678600304E60 /* MVBaseTableView.m */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -425,6 +438,11 @@
 		80D89B201F42E9B900304E60 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				80D89B301F4C67C600304E60 /* MineIndexTableView.h */,
+				80D89B311F4C67C600304E60 /* MineIndexTableView.m */,
+				80D89B331F4C680200304E60 /* MineIndexTableViewCell.h */,
+				80D89B341F4C680200304E60 /* MineIndexTableViewCell.m */,
+				80D89B351F4C680200304E60 /* MineIndexTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -528,6 +546,7 @@
 				80892F161F42DA90008B6BE7 /* Assets.xcassets in Resources */,
 				80892F181F42DA90008B6BE7 /* Main.storyboard in Resources */,
 				80892F171F42DA90008B6BE7 /* LaunchScreen.storyboard in Resources */,
+				80D89B371F4C680200304E60 /* MineIndexTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,9 +627,11 @@
 				80892F191F42DA90008B6BE7 /* NSDictionary+JudgeObj.m in Sources */,
 				80892ECA1F42DA06008B6BE7 /* AppDelegate.m in Sources */,
 				80892F211F42DA90008B6BE7 /* APIUrl.m in Sources */,
+				80D89B361F4C680200304E60 /* MineIndexTableViewCell.m in Sources */,
 				80892F1B1F42DA90008B6BE7 /* UIColor+expanded.m in Sources */,
 				80892F1F1F42DA90008B6BE7 /* UIView+PushViewController.m in Sources */,
 				80892F231F42DA90008B6BE7 /* HKAFHTTPSessionManager.m in Sources */,
+				80D89B2F1F4C678600304E60 /* MVBaseTableView.m in Sources */,
 				80D89B231F42E9D900304E60 /* DiscoveryIndexViewController.m in Sources */,
 				80892F151F42DA90008B6BE7 /* MVBaseViewController.m in Sources */,
 				80892F1A1F42DA90008B6BE7 /* NSObject+Common.m in Sources */,
@@ -620,6 +641,7 @@
 				80892F201F42DA90008B6BE7 /* UIViewController+help.m in Sources */,
 				80D89B261F42E9E900304E60 /* HomeViewController.m in Sources */,
 				80892F221F42DA90008B6BE7 /* BD_DropDownView.m in Sources */,
+				80D89B321F4C67C600304E60 /* MineIndexTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

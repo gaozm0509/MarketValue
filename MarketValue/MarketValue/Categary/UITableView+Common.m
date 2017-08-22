@@ -101,7 +101,7 @@
     
     CGMutablePathRef pathRef = CGPathCreateMutable();
     
-    CGRect bounds = CGRectInset(CGRectMake(0, 0, kScreen_Width, [self rectForRowAtIndexPath:indexPath].size.height), 0, 0);
+    CGRect bounds = CGRectInset(CGRectMake(0, 0, Screen_Width, [self rectForRowAtIndexPath:indexPath].size.height), 0, 0);
     
     CGPathAddRect(pathRef, nil, bounds);
     

@@ -7,31 +7,55 @@
 //
 
 #import "MineIndexViewController.h"
+#import "MineIndexTableView.h"
 
 @interface MineIndexViewController ()
+
+@property (nonatomic, strong) MineIndexTableView *tableView;
 
 @end
 
 @implementation MineIndexViewController
 
+#pragma mark - Cycle life
+
+- (void)dealloc{
+    NSLog(@"%s dealloc",__func__);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - Getter and setter
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (MineIndexTableView *)tableView {
+    if (!_tableView) {
+        _tableView = [[MineIndexTableView alloc] initWithFrame:ViewFrame style:UITableViewStylePlain];
+    }
+    return _tableView;
 }
-*/
+
+#pragma mark - Delegate
+
+
+
+#pragma mark - Net request
+
+
+
+#pragma mark - Event method
+
+
+
+#pragma mark - Pravit method
+
+- (void)setupSubViews {
+    [self.view addSubview:self.tableView];
+}
 
 @end

@@ -64,7 +64,7 @@
         hud.label.text = tipStr;
         hud.margin = 10.f;
         hud.label.font = [UIFont systemFontOfSize:17];
-        hud.offset = CGPointMake(hud.offset.x, kScreen_Height / 2 - 100);
+        hud.offset = CGPointMake(hud.offset.x, Screen_Height / 2 - 100);
         hud.removeFromSuperViewOnHide = YES;
                 [hud hideAnimated:YES afterDelay:1.5];
     }
@@ -152,7 +152,7 @@
 
 - (NSString *)getUDID{
     //获取
-    KeychainItemWrapper *keychain=[[KeychainItemWrapper alloc] initWithIdentifier:kImeiCode accessGroup:nil];
+    KeychainItemWrapper *keychain=[[KeychainItemWrapper alloc] initWithIdentifier:ImeiCode accessGroup:nil];
     NSString *imeiCode = [keychain objectForKey:(id)kSecAttrService];
     
     //设置

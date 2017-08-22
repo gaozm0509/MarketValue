@@ -45,42 +45,42 @@
 
 #define iPhone6p				([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
 
-#define kScreen_Bounds [UIScreen mainScreen].bounds             //屏幕的Bounds
-#define kScreen_Height [UIScreen mainScreen].bounds.size.height   //屏幕的高
-#define kScreen_Width ([UIScreen mainScreen].bounds.size.width)   //屏幕的宽
+#define Screen_Bounds [UIScreen mainScreen].bounds             //屏幕的Bounds
+#define Screen_Height [UIScreen mainScreen].bounds.size.height   //屏幕的高
+#define Screen_Width ([UIScreen mainScreen].bounds.size.width)   //屏幕的宽
 
-#define kNavTitleFontSize 18        // 返回NavBar上标题字体大小
-#define kBackButtonFontSize 15         // 返回按钮字体大小
+#define NavTitleFontSize 18        // 返回NavBar上标题字体大小
+#define BackButtonFontSize 15         // 返回按钮字体大小
 
-#define kNavHeight 64
-#define kTabbarHeight 49
+#define NavHeight 64
+#define TabbarHeight 49
 
 
-#define kViewFrame CGRectMake(0, 0, kScreen_Width, kScreen_Height - kNavHeight)
+#define ViewFrame CGRectMake(0, 0, Screen_Width, Screen_Height)
 
 // 存到KeychainItemWrapper中的替代imei吗的key
-#define kImeiCode @"imeiCode"
+#define ImeiCode @"imeiCode"
 
 // 主要的颜色值
-#define KMajorColor [UIColor colorWithHexString:@"218aff"]
-#define kBorderColor [UIColor colorWithHexString:@"dddddd"]
-#define kBackgroundColor [UIColor colorWithHexString:@"edecf4"]
-#define kText_Color [UIColor colorWithHexString:@"323232"]// 黑色字体颜色
+#define MajorColor [UIColor colorWithHexString:@"218aff"]
+#define BorderColor [UIColor colorWithHexString:@"dddddd"]
+#define BackgroundColor [UIColor colorWithHexString:@"eaeaea"]
+#define Text_Color [UIColor colorWithHexString:@"323232"]// 黑色字体颜色
 #define Color_Hex(value) [UIColor colorWithHexString:value]
 
 // UIFont
-#define kFont10 [UIFont systemFontOfSize:10]
-#define kFont11 [UIFont systemFontOfSize:11]
-#define kFont12 [UIFont systemFontOfSize:12]
-#define kFont13 [UIFont systemFontOfSize:13]
-#define kFont14 [UIFont systemFontOfSize:14]
-#define kFont15 [UIFont systemFontOfSize:15]
-#define kFont16 [UIFont systemFontOfSize:16]
-#define kFont17 [UIFont systemFontOfSize:17]
-#define kFont18 [UIFont systemFontOfSize:18]
-#define kFont19 [UIFont systemFontOfSize:19]
-#define kFont20 [UIFont systemFontOfSize:20]
+#define Font10 [UIFont systemFontOfSize:10]
+#define Font11 [UIFont systemFontOfSize:11]
+#define Font12 [UIFont systemFontOfSize:12]
+#define Font13 [UIFont systemFontOfSize:13]
+#define Font14 [UIFont systemFontOfSize:14]
+#define Font15 [UIFont systemFontOfSize:15]
+#define Font16 [UIFont systemFontOfSize:16]
+#define Font17 [UIFont systemFontOfSize:17]
+#define Font18 [UIFont systemFontOfSize:18]
+#define Font19 [UIFont systemFontOfSize:19]
+#define Font20 [UIFont systemFontOfSize:20]
 
 // place image
-#define kPlaceholderImage Image(@"placeholder")
+#define PlaceholderImage Image(@"placeholder")
 
